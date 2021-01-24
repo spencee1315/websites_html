@@ -1,0 +1,75 @@
+header, main, section, nav, footer, figure, figcaption {
+    display: block;
+}
+
+body {
+    background-color: bisque;
+    color: blueviolet;
+    background-position: center;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: solid black 2px;
+}
+
+header, footer {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.header_text {
+    color:bisque;
+    margin-top: 10px;
+}
+
+.footer_text {
+    color:bisque;
+    margin: 10px auto 10px auto;
+}
+
+section {
+    background-color: gold;
+    text-align: center;
+    border: solid black 1px;
+}
+
+#hero {
+    height: 300px;
+    width: 800px;
+    border: solid black 5px;
+}
+
+.other_picture {
+    height: 300px;
+    width: 800px;
+    border: solid black 5px;
+}
+
+aside {
+    float: center;
+    padding: 0px 0px 0px 0px;
+    border: solid black 2px;
+    display:block;
+}
+
+.float_left {
+    float: left;
+    padding: 5px;
+    margin: 20px;
+
+}
+
+.my_picture {
+    height: 400px;
+    width: 300px;
+    border: solid black 5px;
+}
+
+li {
+    border: solid black 1px;
+    display: inline;
+}
+
+

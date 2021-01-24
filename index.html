@@ -2,86 +2,12 @@
 <html>
     <head>
         <title>HTML5 Layout</title>
-        <style type="text/css">
-        header, section, footer, aside, nav, article, figure, figcaption {display: block;}
-        body {
-            color: #666666;
-            background-color: #f9f8f6;
-            background-position: center;
-            font-family: Georgia, Times, serif;
-            line-height: 1.4em;
-            margin: 0px;}
-        .wrapper {
-            width: 1000px;
-            margin: 20px auto 20px auto;
-            border: 2px solid #000000;
-            background-color: #ffffff;}
-        header {
-            height: 250px;}
-        h1 {
-            text-indent: 20px;
-            width: 940px;
-            height: 130px;
-            margin: 10px;}
-        nav, footer {
-            clear: both;
-            color: #fffffff;
-            background-color: #aeaca8;
-            height: 30px;}
-        nav ul {
-            margin: 0px;
-            padding: 5px 0px 5px 30px;}
-        nav li {
-            display: inline;
-            margin-right: 40px;}
-        nav i a {
-            color: #fffffff;}
-        nav li a:hover, nav li a.current {
-            color: #000000;}
-        section.class_4_reading {
-            float: left;
-            width: 659px;
-            border-right: 1px solid #eeeeee;}
-        article {
-            clear: both;
-            overflow: auto;
-            width: 100%;}
-        hgroup {
-            margin-top: 40px;}
-        figure {
-            float: left;
-            width: 290px;
-            height: 220px;
-            padding: 5px;
-            margin: 20px;
-            border: 1px solid #eeeeee;}
-        figcaption {
-            font-size: 90%;
-            text-align: left;}
-        aside {
-            width: 230px;
-            float: left;
-            padding: 0px 0px 0px 0px;}
-        a {
-            color: #de6581;
-            text-decoration: none;}
-        h1, h2 {
-            font-weight: normal;}
-        h2 {
-            margin: 10px 0px 5px 0px;
-            padding: 0px;}
-        aside h2 {
-            padding: 30px 0px 10px 0px;
-            color: #de6581;}
-        footer {
-            font-size: 80%;
-            padding: 7px 0px 0px 20px;}
-        </style>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1> CODE-102 Class 4 - My First Website Using HTML5 via GitHub</h1>
+            <h1 class="header_text"> CODE-102 Class 4 - My First Website Using HTML5 via GitHub</h1>
             <nav>
                 <ul>    
                     <li><a href="www.linkedin.com/in/elliott-spencer-886a9818">About Me</a></li>
@@ -90,8 +16,9 @@
                 </ul>
             </nav>
         </header> <!-- end of header -->
-        <section class="class_4_reading">
-            <article>
+        <main>
+            <section>
+                <img id="hero" src="https://lumiere-a.akamaihd.net/v1/images/millennium-falcon-main-tlj-a_7cf89d3a.jpeg?region=0%2C0%2C1280%2C720&width=768">
                 <h1>Basic HTML5</h1>
                 <h2>What is HTML & What is HTML5?</h2>
                 <p>HTML stands for hypertext markup language and <br />
@@ -109,10 +36,10 @@
                     <li>Blog Articles</li>
                     <li>Navigation</li>
                 </ul>
-            </article>
-            <article>
+            </section>
+            <section>
                 <figure>
-                    <img src="https://img.thriftbooks.com/api/images/m/42286e8944500ef27a6e5a777b7b95c27953d150.jpg" alt="HTML and CSS: Design and Build Websites by Jon Duckett" />
+                    <img class="other_picture" src="https://img.thriftbooks.com/api/images/m/42286e8944500ef27a6e5a777b7b95c27953d150.jpg" alt="HTML and CSS: Design and Build Websites by Jon Duckett" />
                     <figcaption> HTML and CSS: Design and Build Websites<br />
                                  by Jon Duckett</figcaption>
                 </figure>
@@ -122,24 +49,27 @@
                     <h2>Chapter 8 - Extra Markup</h2>
                 </hgroup>
                  <p>Visit the "My Readings" link at the top of the page for more information on my reading notes for this week about HTML.</p>
-            </article>
-        </section>
-        <aside>
-            <section class="my_info">
-            <iframe
-            width="450"
-            height="350"
-            src="IMG_2334.jpg" alt="My Photo">
-            </iframe>
             </section>
-            <section class="contact">
-                <h2>Contact</h2>
-                <p>Elliott Spencer<br />
-                   Email: <a href="mailto:e.spencer1315@gmail.com"> Send an Email </a><br />
-                   GitHub: <a href="https://github.com/spencee1315"> Go to my GitHub Profile</a></p>
+            <aside>
+                <section>
+                <img class="my_picture" src="IMG_2334.jpg" alt="My Photo" />
+                </section>
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <p>Elliott Spencer<br />
+                       Email: <a href="mailto:e.spencer1315@gmail.com"> Send an Email </a><br />
+                       GitHub: <a href="https://github.com/spencee1315"> Go to my GitHub Profile</a></p>
+                </section>
+            </aside>
+            <section>
+                <figure>
+                    <img class="other_picture" src="https://static.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755" />
+                    <figcaption> Another picture about Starwars</figcaption>
+                </figure>
+                 <p>This is another paragraph for this website. </p>
             </section>
-        </aside>
-        <footer> &copy; Elliott's Webpage About HTML</footer>
+        </main>
+        <footer class="footer_text"> &copy; Elliott's Webpage About HTML</footer>
     </div> <!-- End of the wrapper -->
 </body>
 </html> 
