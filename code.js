@@ -24,11 +24,23 @@ var welcomeMessage = greeting + name + '!';
 var el = document.getElementById('greeting');
 el.textContent = welcomeMessage;
 
-// Create variables to create a color array
-var colors = ['white',
-'black','custom'];
+// display a confirmation box and output what the user clicked
+var txt;
+var r = confirm("Press a button!");
+if (r == true) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
 
-colors[2] = 'purple';
+// Display a prompt box which ask the user for her/his name, and output a message
+var userName = prompt('Please Enter your name!');
 
-var el = document.getElementById('colors');
-el.textContent = colors[2];
+alert('Hello ' + userName);
+
+
+if(userName == 'Elliott') {
+    document.write('Welcome Darth ' + userName)
+} else {
+    document.write('Welcome ' + userName)
+}
