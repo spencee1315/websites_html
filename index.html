@@ -20,7 +20,8 @@
         <main>
             <section>
                 <img id="hero" src="https://lumiere-a.akamaihd.net/v1/images/millennium-falcon-main-tlj-a_7cf89d3a.jpeg?region=0%2C0%2C1280%2C720&width=768">
-                <h1>Basic HTML5</h1>
+                <h1 id="greeting">Basic HTML5</h1>
+                <script src="code2.js"></script>
                 <h2>What is HTML & What is HTML5?</h2>
                 <p>HTML stands for hypertext markup language and <br />
                    it is the foundational piece to your website.<br />
@@ -44,15 +45,7 @@
                     <li>Navigation</li>
                 </ul>
                 <button onclick="userName()">Click to write your name!</button>
-                <script>
-                    var userName = prompt('Please Enter your name!');
-                    alert('Hello ' + userName);
-                    if(userName == 'Elliott') {
-                    document.write('Welcome Darth ' + userName)
-                    } else {
-                     document.write('Welcome ' + userName)
-                    }
-                </script>
+                <script src="code3.js"></script>
             </section>
             <section>
                 <figure>
@@ -67,18 +60,7 @@
                 </hgroup>
                  <p>Visit the "My Readings" link at the top of the page for more information on my reading notes for this week about HTML.</p>
                  <button onclick="myFunction()">Try it</button>
-                 <script>
-                    function myFunction() {
-                      var txt;
-                      var r = confirm("Press a button!");
-                      if (r == true) {
-                        txt = "You pressed OK!";
-                      } else {
-                        txt = "You pressed Cancel!";
-                      }
-                      document.getElementById("demo").innerHTML = txt;
-                    }
-                    </script>
+                 <script src="code4.js"></script>
             </section>
             <aside>
                 <section>
