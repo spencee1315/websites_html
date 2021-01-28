@@ -1,3 +1,4 @@
+// Prompts user to enter name when visiting the page, will run it twice
 function askUsername(){
     let userName = prompt('Please Enter Your Name');
     document.write(userName);
