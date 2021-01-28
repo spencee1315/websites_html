@@ -1,8 +1,13 @@
-// Create variables for the welcome by name
-var greeting = 'Howdy ';
-var message = 'Elliott';
+//function askUsername(){ //calling the function
+    //enter name John
+   // let userName = prompt('Please Enter Your Name'); //declaring the function, variable name = userName
+    //print John
+   // document.write(userName);
+    //return John
+    //return userName; //returns the content of the variable,but not the variable 'userName'
+// }
+//invoke the function
+//askUsername();
 
-var welcomeMessage = greeting + message + '!';
-
-var el = document.getElementById('greeting');
-el.textContent = welcomeMessage;
+// getUserName = 'John' (assigned to the string of John)
+//let getUserName = askUsername();
