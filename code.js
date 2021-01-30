@@ -88,10 +88,10 @@ function guessingGame (){
 // Displaying photo 3 times
 
 function printImage(){
-    let imageSrc = document.getElementById('imageSrc')
-    for(let i = 0; i <= 3; i++){
-        let imageSrc = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
-        imageSrc.src = imageSrc;
+    let other_picture = document.getElementsByClassName('other_picture');
+    for(let i = 1; i <= 3; i++){
+        let other_picture = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
+        other_picture.src = other_picture;
     }
 }
 
