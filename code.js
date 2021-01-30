@@ -85,14 +85,21 @@ function guessingGame (){
     }
 }
 
-// Displaying photo 3 times
+// Displaying photo 3 times - second attempt
+let imgSrc = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
 
 function printImage(){
-    let other_picture = document.getElementsByClassName('other_picture');
-    for(let i = 1; i <= 3; i++){
-        let other_picture = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
-        other_picture.src = other_picture;
+    for(let i = 1; i <= imgSrc; i++){
+        document.write('<img>' + i + '</img>') //lab part 2
     }
 }
+
+// my first attempt function printImage(){
+  //  let other_picture = document.getElementsByClassName('other_picture');
+    //for(let i = 1; i <= 3; i++){
+      //  let other_picture = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
+        //other_picture.src = other_picture;
+    //}
+//}
 
 
