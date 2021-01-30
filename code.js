@@ -52,3 +52,47 @@ document.write('<h3>' + greeting + '</h3>');
 }
 
 dailyGreeting();
+
+// Printing a series of numbers on the page
+
+function printNumbers(){
+    for(let i = 0; i < 10; i++){
+        document.write('<li>' + i + '</li>') //lab part 2
+    }
+}
+
+//Creating Number Guessing Game
+
+let correctAnswer = 13;
+
+function guessingGame (){
+    let userAnswer = prompt('Please select a number 1 - 100'); //lab part 1
+    while (userAnswer < 1 || userAnswer > 100){
+        userAnswer = prompt('Incorrect. Please select a number 1-100');
+    }
+    let numberOfGuesses = 3
+    for(let i= 0; i < numberOfGuesses; i++){
+        if (userAnswer == correctAnswer){
+            alert('Great Job, you got it right');
+            break; //or i = 3, not common convention
+        } else if (userAnswer < correctAnswer){
+            alert('Sorry, too low')
+            userAnswer = prompt('Please select a number 1 - 100');
+        } else if (userAnswer > correctAnswer){
+            alert('Sorry, too hight')
+            userAnswer = prompt('Please select a number 1 - 100');
+        }
+    }
+}
+
+// Displaying photo 3 times
+
+function printImage(){
+    let imageSrc = document.getElementById('imageSrc')
+    for(let i = 0; i <= 3; i++){
+        let imageSrc = "daniel-cheung-cPF2nlWcMY4-unsplash.jpg";
+        imageSrc.src = imageSrc;
+    }
+}
+
+
