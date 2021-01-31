@@ -1,3 +1,21 @@
+// Prompts user to enter name when visiting the page, will run it twice
+function askUsername(){
+  let userName = prompt('Welcome! What is your name?');
+  alert('Hi' + userName + 'Welcome to my first website for Codefellow, class 102, with basic info about me, my first time using javascript, functions loops and more. Enjoy!')
+  return userName; 
+}
+
+let getUserName = askUsername();
+// Display a prompt box which ask the user for her/his name, and output a message
+function checkName(getUserName){
+  if(getUserName == 'Elliott'){
+      document.write('<h3>' + 'Welcome, Elliott' + '</h3>');
+  } else {
+      document.write('<h3>' + 'Welcome Guest' + getUserName + '</h3>');
+  }
+}
+
+checkName(askUsername());
 //function askUsername(){ //calling the function
     //enter name John
    // let userName = prompt('Please Enter Your Name'); //declaring the function, variable name = userName

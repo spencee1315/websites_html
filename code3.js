@@ -1,11 +1,23 @@
-// Display a prompt box which ask the user for her/his name, and output a message
-//function checkName(getUserName){
-  //  if(getUserName== 'Elliott') {
-   //     document.write('<h3>' + 'Welcome Darth Elliott' + '</h3>');
-    //} else if (getUserName != 'Elliott'){
-   //     document.write('<h3>' + 'Welcome Guest' + '</h3>');
-   // }
-// }
+// Create Variables to change greeting by time of day
+function dailyGreeting(){ 
+  var today = new Date();
+  var hourNow = today.getHours();
+  var greeting;
+
+if (hourNow > 18){
+  greeting = 'Good evening!';
+} else if (hourNow > 12) {
+  greeting = 'Good afternoon!';
+} else if (hourNow > 0) {
+  greeting = 'Good morning!';
+} else {
+  greeting = 'Welcome!';
+}
+
+document.write('<h3>' + greeting + '</h3>');
+}
+
+dailyGreeting();
 
 // checkName(askUsername());
 //called a call back
